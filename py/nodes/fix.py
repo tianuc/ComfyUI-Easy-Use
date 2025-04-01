@@ -127,7 +127,7 @@ class hiresFix:
 
                 "samples": {"samples": t},
                 "images": s,
-                "seed": pipe['seed'],
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
 
                 "loader_settings": {
                     **pipe["loader_settings"],
